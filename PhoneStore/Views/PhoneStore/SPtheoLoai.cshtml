@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Bộ Sưu Tập - Trang " + ViewBag.Page;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using ToyStore.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<SanPham>
+
+
+<div class="all_sub-category-grid">
+    <div class="category-grid sub-category-grid">
+        <div class="item-box active">
+            <div class="sub-category-item">
+                <div class="title">
+                    <a href="/PhoneStore/DongSanPham/1" title="All model"> Tất cả </a>
+                </div>
+            </div>
+        </div>
+        <div class="item-box">
+            <div class="sub-category-item">
+                <div class="picture news">
+                    <a href="/souvenir" class="accessory-image news">
+                        <img alt="Souvenir" src="../Themes/SD/Content/images/souvenir/souvenir-icon.png" title="Góc lưu niệm">
+                    </a>
+                </div>
+                <div class="title">
+                    <a href="#" title="Góc lưu niệm"> Góc lưu niệm </a>
+                </div>
+            </div>
+        </div>
+        @Html.Action("PhanLoai", "PhoneStore", new { idD = ViewBag.idD })
+    </div>
+</div>
+
+<div class="category-item">
+    <div class="page category-page">
+        <div class="page-body">
+            <div class="product-grid featured-product-grid">
+                <div class="item-grid">
+                    @foreach (var toy in Model)
+                    {
+                        <div class="item-box">
+                            <div class="product-item">
+                                <div class="product_tag"></div>
+                                <div class="picture">
+                                    <a href="@Url.Action("Details", "PhoneStore", new { id = @toy.MaSP })" title="@toy.TenSP">
+                                        <img alt="Ảnh @toy.TenSP" src="~/assets/images/sanpham/@toy.AnhBia" title="Hiển thị chi tiết @toy.TenSP">
+                                    </a>
+                                </div>
+                                <div class="details">
+                                    <h3 class="product-title">
+                                        <a href="@Url.Action("Details", "PhoneStore", new { id = @toy.MaSP })">@toy.TenSP </a>
+                                    </h3>
+                                    <div class="add-info">
+                                        <div class="prices">
+                                            <span class="price actual-price">@String.Format("{0:0,0}", @toy.GiaBan)₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="section pagenav" style="margin-top: 20px">
+                    <ul class="pagination">
+                        @Html.PagedListPager(Model, page => Url.Action("SPtheoLoai", new { page = page }))
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

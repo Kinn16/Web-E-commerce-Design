@@ -1,0 +1,81 @@
+﻿@model IEnumerable<ToyStore.Models.DonDatHang>
+
+@{
+    ViewBag.Title = "Danh sách đơn đặt hàng";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<table class="table">
+    <tr>
+        <th>
+            Tên KH
+        </th>
+        <th>
+            Ngày đặt hàng
+        </th>
+        <th>
+            Ngày hẹn giao
+        </th>
+        <th>
+            Số điện thoại
+        </th>
+        <th>
+            Địa chỉ
+        </th>
+        <th>
+            Tổng tiền
+        </th>
+        <th>
+            Thanh toán
+        </th>
+        <th>
+            Tình trạng đơn hàng
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.KhachHang.HoTen)
+        </td>
+        <td>
+            @String.Format("{0:dd/MM/yyyy}", item.NgayDH)
+        </td>
+        <td>
+            @String.Format("{0:dd/MM/yyyy}", item.NgayGiao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SDT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Diachi)
+        </td>
+        <td>
+            @String.Format("{0:0,0}", item.TongTien)
+        </td>
+        @if (item.DaThanhToan == false)
+        {
+           <td>Chưa thanh toán</td>
+        }
+        else
+        {
+           <td>Đã thanh toán</td>
+        }
+        @if (item.TinhTrangGiaoHang == false)
+        {
+           <td>Đang vận chuyển</td>
+        }
+        else
+        {
+           <td>Đã giao hàng</td>
+        }
+        <td>
+            @Html.ActionLink("Chi Tiết", "Chitietdonhang", new { id = item.SoDH })
+        </td>
+    </tr>
+}
+</table>
+<div class="text-center" style="margin-top: 50px;">
+    <h4>@Html.ActionLink("Về trang chủ", "Index")</h4>
+</div>

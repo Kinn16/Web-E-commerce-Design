@@ -1,0 +1,27 @@
+﻿@using ToyStore.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<SanPham>
+
+@foreach (var toy in Model)
+{
+    <div class="item-box">
+        <div class="product-item">
+            <div class="product_tag"></div>
+            <div class="picture">
+                <a href="@Url.Action("Details", "PhoneStore", new { id = @toy.MaSP })" title="@toy.TenSP">
+                    <img alt="Ảnh @toy.TenSP" src="~/assets/images/sanpham/@toy.AnhBia" title="Hiển thị chi tiết @toy.TenSP">
+                </a>
+            </div>
+            <div class="details">
+                <h3 class="product-title">
+                    <a href="@Url.Action("Details", "PhoneStore", new { id = @toy.MaSP })">@toy.TenSP </a>
+                </h3>
+                <div class="add-info">
+                    <div class="prices">
+                        <span class="price actual-price">@String.Format("{0:0,0}", @toy.GiaBan)₫</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

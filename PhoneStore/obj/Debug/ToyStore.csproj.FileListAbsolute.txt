@@ -1,0 +1,320 @@
+D:\Download\Web Programing\ToyStore\ToyStore\bin\ToyStore.dll.config
+D:\Download\Web Programing\ToyStore\ToyStore\bin\ToyStore.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\ToyStore.pdb
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\csc.exe
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\csc.exe.config
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\csc.rsp
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\csi.exe
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\csi.rsp
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\System.AppContext.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\System.Collections.Immutable.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\System.IO.FileSystem.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\System.Reflection.Metadata.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\vbc.exe
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\vbc.exe.config
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\vbc.rsp
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\VBCSCompiler.exe
+D:\Download\Web Programing\ToyStore\ToyStore\bin\roslyn\VBCSCompiler.exe.config
+D:\Download\Web Programing\ToyStore\ToyStore\bin\Antlr3.Runtime.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\Microsoft.Web.Infrastructure.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\Newtonsoft.Json.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\System.Web.Helpers.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\System.Web.Mvc.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\System.Web.Optimization.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\System.Web.Razor.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\System.Web.WebPages.Deployment.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\System.Web.WebPages.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\System.Web.WebPages.Razor.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\WebGrease.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\System.Web.Helpers.xml
+D:\Download\Web Programing\ToyStore\ToyStore\bin\System.Web.Mvc.xml
+D:\Download\Web Programing\ToyStore\ToyStore\bin\System.Web.Optimization.xml
+D:\Download\Web Programing\ToyStore\ToyStore\bin\System.Web.Razor.xml
+D:\Download\Web Programing\ToyStore\ToyStore\bin\System.Web.WebPages.xml
+D:\Download\Web Programing\ToyStore\ToyStore\bin\System.Web.WebPages.Deployment.xml
+D:\Download\Web Programing\ToyStore\ToyStore\bin\System.Web.WebPages.Razor.xml
+D:\Download\Web Programing\ToyStore\ToyStore\bin\Newtonsoft.Json.xml
+D:\Download\Web Programing\ToyStore\ToyStore\bin\Antlr3.Runtime.pdb
+D:\Download\Web Programing\ToyStore\ToyStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Download\Web Programing\ToyStore\ToyStore\obj\Debug\ToyStore.csproj.CoreCompileInputs.cache
+D:\Download\Web Programing\ToyStore\ToyStore\obj\Debug\ToyStore.csproj.CopyComplete
+D:\Download\Web Programing\ToyStore\ToyStore\obj\Debug\ToyStore.dll
+D:\Download\Web Programing\ToyStore\ToyStore\obj\Debug\ToyStore.pdb
+D:\Download\Web Programing\ToyStore\ToyStore\bin\EntityFramework.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\EntityFramework.SqlServer.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\EntityFramework.xml
+D:\Download\Web Programing\ToyStore\ToyStore\bin\EntityFramework.SqlServer.xml
+D:\Download\Web Programing\ToyStore\ToyStore\bin\PagedList.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\PagedList.Mvc.dll
+D:\Download\Web Programing\ToyStore\ToyStore\bin\PagedList.xml
+D:\Download\Web Programing\ToyStore\ToyStore\bin\PagedList.Mvc.xml
+D:\Download\Web Programing\ToyStore\ToyStore\obj\Debug\ToyStore.csproj.AssemblyReference.cache
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\ToyStore.dll.config
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\ToyStore.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\ToyStore.pdb
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\csc.exe
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\csc.exe.config
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\csc.rsp
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\csi.exe
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\csi.rsp
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\System.AppContext.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\System.Collections.Immutable.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\System.IO.FileSystem.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\System.Reflection.Metadata.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\vbc.exe
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\vbc.exe.config
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\vbc.rsp
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\VBCSCompiler.exe
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\roslyn\VBCSCompiler.exe.config
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\Antlr3.Runtime.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\EntityFramework.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\EntityFramework.SqlServer.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\Microsoft.Web.Infrastructure.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\Newtonsoft.Json.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\PagedList.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\PagedList.Mvc.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\System.Web.Helpers.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\System.Web.Mvc.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\System.Web.Optimization.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\System.Web.Razor.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\System.Web.WebPages.Deployment.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\System.Web.WebPages.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\System.Web.WebPages.Razor.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\WebGrease.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\EntityFramework.xml
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\EntityFramework.SqlServer.xml
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\PagedList.xml
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\PagedList.Mvc.xml
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\System.Web.Helpers.xml
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\System.Web.Mvc.xml
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\System.Web.Optimization.xml
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\System.Web.Razor.xml
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\System.Web.WebPages.xml
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\System.Web.WebPages.Deployment.xml
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\System.Web.WebPages.Razor.xml
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\Newtonsoft.Json.xml
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\Antlr3.Runtime.pdb
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\obj\Debug\ToyStore.csproj.AssemblyReference.cache
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\obj\Debug\ToyStore.csproj.CoreCompileInputs.cache
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\obj\Debug\ToyStore.csproj.CopyComplete
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\obj\Debug\ToyStore.dll
+D:\Download\Đồ án cơ sở KTPM\Web Programing\ToyStore\ToyStore\obj\Debug\ToyStore.pdb
+D:\Download\ToyStore\ToyStore\bin\ToyStore.dll.config
+D:\Download\ToyStore\ToyStore\bin\ToyStore.dll
+D:\Download\ToyStore\ToyStore\bin\ToyStore.pdb
+D:\Download\ToyStore\ToyStore\bin\roslyn\csc.exe
+D:\Download\ToyStore\ToyStore\bin\roslyn\csc.exe.config
+D:\Download\ToyStore\ToyStore\bin\roslyn\csc.rsp
+D:\Download\ToyStore\ToyStore\bin\roslyn\csi.exe
+D:\Download\ToyStore\ToyStore\bin\roslyn\csi.rsp
+D:\Download\ToyStore\ToyStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Download\ToyStore\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Download\ToyStore\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Download\ToyStore\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Download\ToyStore\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Download\ToyStore\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Download\ToyStore\ToyStore\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Download\ToyStore\ToyStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Download\ToyStore\ToyStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Download\ToyStore\ToyStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Download\ToyStore\ToyStore\bin\roslyn\System.AppContext.dll
+D:\Download\ToyStore\ToyStore\bin\roslyn\System.Collections.Immutable.dll
+D:\Download\ToyStore\ToyStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Download\ToyStore\ToyStore\bin\roslyn\System.IO.FileSystem.dll
+D:\Download\ToyStore\ToyStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Download\ToyStore\ToyStore\bin\roslyn\System.Reflection.Metadata.dll
+D:\Download\ToyStore\ToyStore\bin\roslyn\vbc.exe
+D:\Download\ToyStore\ToyStore\bin\roslyn\vbc.exe.config
+D:\Download\ToyStore\ToyStore\bin\roslyn\vbc.rsp
+D:\Download\ToyStore\ToyStore\bin\roslyn\VBCSCompiler.exe
+D:\Download\ToyStore\ToyStore\bin\roslyn\VBCSCompiler.exe.config
+D:\Download\ToyStore\ToyStore\bin\Antlr3.Runtime.dll
+D:\Download\ToyStore\ToyStore\bin\EntityFramework.dll
+D:\Download\ToyStore\ToyStore\bin\EntityFramework.SqlServer.dll
+D:\Download\ToyStore\ToyStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Download\ToyStore\ToyStore\bin\Microsoft.Web.Infrastructure.dll
+D:\Download\ToyStore\ToyStore\bin\Newtonsoft.Json.dll
+D:\Download\ToyStore\ToyStore\bin\PagedList.dll
+D:\Download\ToyStore\ToyStore\bin\PagedList.Mvc.dll
+D:\Download\ToyStore\ToyStore\bin\System.Web.Helpers.dll
+D:\Download\ToyStore\ToyStore\bin\System.Web.Mvc.dll
+D:\Download\ToyStore\ToyStore\bin\System.Web.Optimization.dll
+D:\Download\ToyStore\ToyStore\bin\System.Web.Razor.dll
+D:\Download\ToyStore\ToyStore\bin\System.Web.WebPages.Deployment.dll
+D:\Download\ToyStore\ToyStore\bin\System.Web.WebPages.dll
+D:\Download\ToyStore\ToyStore\bin\System.Web.WebPages.Razor.dll
+D:\Download\ToyStore\ToyStore\bin\WebGrease.dll
+D:\Download\ToyStore\ToyStore\bin\EntityFramework.xml
+D:\Download\ToyStore\ToyStore\bin\EntityFramework.SqlServer.xml
+D:\Download\ToyStore\ToyStore\bin\PagedList.xml
+D:\Download\ToyStore\ToyStore\bin\PagedList.Mvc.xml
+D:\Download\ToyStore\ToyStore\bin\System.Web.Helpers.xml
+D:\Download\ToyStore\ToyStore\bin\System.Web.Mvc.xml
+D:\Download\ToyStore\ToyStore\bin\System.Web.Optimization.xml
+D:\Download\ToyStore\ToyStore\bin\System.Web.Razor.xml
+D:\Download\ToyStore\ToyStore\bin\System.Web.WebPages.xml
+D:\Download\ToyStore\ToyStore\bin\System.Web.WebPages.Deployment.xml
+D:\Download\ToyStore\ToyStore\bin\System.Web.WebPages.Razor.xml
+D:\Download\ToyStore\ToyStore\bin\Newtonsoft.Json.xml
+D:\Download\ToyStore\ToyStore\bin\Antlr3.Runtime.pdb
+D:\Download\ToyStore\ToyStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Download\ToyStore\ToyStore\obj\Debug\ToyStore.csproj.AssemblyReference.cache
+D:\Download\ToyStore\ToyStore\obj\Debug\ToyStore.csproj.CoreCompileInputs.cache
+D:\Download\ToyStore\ToyStore\obj\Debug\ToyStore.csproj.CopyComplete
+D:\Download\ToyStore\ToyStore\obj\Debug\ToyStore.dll
+D:\Download\ToyStore\ToyStore\obj\Debug\ToyStore.pdb
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\ToyStore.dll.config
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\ToyStore.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\ToyStore.pdb
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\csc.exe
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\csc.exe.config
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\csc.rsp
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\csi.exe
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\csi.rsp
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\System.AppContext.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\System.Collections.Immutable.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\System.IO.FileSystem.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\System.Reflection.Metadata.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\vbc.exe
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\vbc.exe.config
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\vbc.rsp
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\VBCSCompiler.exe
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\roslyn\VBCSCompiler.exe.config
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\Antlr3.Runtime.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\EntityFramework.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\EntityFramework.SqlServer.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\Microsoft.Web.Infrastructure.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\Newtonsoft.Json.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\PagedList.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\PagedList.Mvc.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\System.Web.Helpers.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\System.Web.Mvc.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\System.Web.Optimization.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\System.Web.Razor.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\System.Web.WebPages.Deployment.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\System.Web.WebPages.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\System.Web.WebPages.Razor.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\WebGrease.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\EntityFramework.xml
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\EntityFramework.SqlServer.xml
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\PagedList.xml
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\PagedList.Mvc.xml
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\System.Web.Helpers.xml
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\System.Web.Mvc.xml
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\System.Web.Optimization.xml
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\System.Web.Razor.xml
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\System.Web.WebPages.xml
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\System.Web.WebPages.Deployment.xml
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\System.Web.WebPages.Razor.xml
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\Newtonsoft.Json.xml
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\Antlr3.Runtime.pdb
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\obj\Debug\ToyStore.csproj.AssemblyReference.cache
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\obj\Debug\ToyStore.csproj.CoreCompileInputs.cache
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\obj\Debug\ToyStore.csproj.CopyComplete
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\obj\Debug\ToyStore.dll
+D:\HK3-20-21-DACS_KTPM-1911547630-NguyenHuyHoang-1911547761-VoDucDuy-19DTH1D\ToyStore\obj\Debug\ToyStore.pdb
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\ToyStore.dll.config
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\ToyStore.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\ToyStore.pdb
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\csc.exe
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\csc.exe.config
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\csc.rsp
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\csi.exe
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\csi.rsp
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\System.AppContext.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\System.Collections.Immutable.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\System.IO.FileSystem.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\System.Reflection.Metadata.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\vbc.exe
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\vbc.exe.config
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\vbc.rsp
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\VBCSCompiler.exe
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\roslyn\VBCSCompiler.exe.config
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\Antlr3.Runtime.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\EntityFramework.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\EntityFramework.SqlServer.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\Microsoft.Web.Infrastructure.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\Newtonsoft.Json.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\PagedList.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\PagedList.Mvc.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\System.Web.Helpers.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\System.Web.Mvc.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\System.Web.Optimization.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\System.Web.Razor.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\System.Web.WebPages.Deployment.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\System.Web.WebPages.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\System.Web.WebPages.Razor.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\WebGrease.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\EntityFramework.xml
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\EntityFramework.SqlServer.xml
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\PagedList.xml
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\PagedList.Mvc.xml
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\System.Web.Helpers.xml
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\System.Web.Mvc.xml
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\System.Web.Optimization.xml
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\System.Web.Razor.xml
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\System.Web.WebPages.xml
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\System.Web.WebPages.Deployment.xml
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\System.Web.WebPages.Razor.xml
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\Newtonsoft.Json.xml
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\Antlr3.Runtime.pdb
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\obj\Debug\ToyStore.csproj.AssemblyReference.cache
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\obj\Debug\ToyStore.csproj.CoreCompileInputs.cache
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\obj\Debug\ToyStore.csproj.CopyComplete
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\obj\Debug\ToyStore.dll
+E:\Tài liệu học tập\19DTH1D_DACS_KTPM_NguyenHuyHoang_1911547630_VoDucDuy_1911547761\ToyStore\obj\Debug\ToyStore.pdb

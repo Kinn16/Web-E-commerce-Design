@@ -1,0 +1,174 @@
+﻿@using ToyStore.Models;
+@model List<Giohang>
+@{
+    ViewBag.Title = "Đặt hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="container">
+        <h2>
+            Thông tin đơn đặt hàng
+        </h2>
+        @{
+            KhachHang kh = (KhachHang)Session["Taikhoan"];
+        }
+        @using (Html.BeginForm())
+        {
+            <table>
+
+                @Html.ValidationSummary(true)
+                <tr style="height: 40px;">
+                    <td>Họ tên: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+                    <td style="font-weight: bold">@kh.HoTen</td>
+                </tr>
+                <tr style="height: 40px;">
+                    <td>Số điện thoại: </td>
+                    <td style="font-weight: bold">@kh.DienThoaiKH</td>
+                </tr>
+                <tr style="height: 40px;">
+                    <td>Địa chỉ: </td>
+                    <td style="font-weight: bold"><input class="form-control" name="Diachi" type="text" value="@kh.DiachiKH" /></td>
+                </tr>
+                <tr style="height: 40px;">
+                    <td>Ngày đặt hàng: </td>
+                    <td style="font-weight: bold">@DateTime.Now.ToShortDateString()</td>
+                </tr>
+                <tr style="height: 40px;">
+                    <td>Ngày giao hàng: </td>
+                    <td style="font-weight: bold">
+                        <input class="form-control" type="date" name="Ngaygiao" value="@String.Format("{0:yyyy-MM-dd}",DateTime.Now.AddDays(5))" />
+                    </td>
+                </tr>
+
+            </table>
+            <div class="review-payment">
+                <h2>Review & Payment</h2>
+            </div>
+            <div class="page shopping-cart-page">
+                <div class="page-body">
+
+                    <div class="order-summary-content container">
+
+
+                        <div id="shopping-cart-form">
+                            <div class="shopping-cart-info">
+                                <div class="cart-detail">
+                                    <div class="table-wrapper">
+                                        <table class="cart">
+                                            <colgroup>
+                                                <col width="1">
+                                                <col width="1">
+                                                <col>
+                                                <col width="1">
+                                                <col width="1">
+                                                <col width="1">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th class="sku">
+                                                        SKU
+                                                    </th>
+                                                    <th class="product-picture">
+                                                        Hình ảnh
+                                                    </th>
+                                                    <th class="product">
+                                                        Tên sản phẩm
+                                                    </th>
+                                                    <th class="unit-price">
+                                                        Giá bán
+                                                    </th>
+                                                    <th class="quantity">
+                                                        Số lượng
+                                                    </th>
+                                                    <th class="quantity">
+                                                        Toàn bộ
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var item in Model)
+                                                {
+                                                    <tr>
+
+                                                        <td class="sku">
+                                                            <label class="td-title">SKU:</label>
+                                                            <span class="sku-number"></span>
+                                                        </td>
+                                                        <td class="product-picture">
+                                                            <a href="@Url.Action("Details", "ToyStore", new { id = item.iMasp })"><img alt="@item.sTensp" src="~/Assets/Images/sanPham/@item.sAnhbia" title="Hiển thị chi tiết cho @item.sTensp"></a>
+                                                            <input type="hidden" class="product-id" value="@item.iMasp">
+                                                        </td>
+                                                        <td class="product">
+                                                            <a href="@Url.Action("Details", "ToyStore", new { id = item.iMasp })" class="product-name">@item.sTensp</a>
+                                                            <div class="attributes">
+                                                                Màu sắc: Đen
+                                                            </div>
+                                                        </td>
+                                                        <td class="unit-price">
+                                                            <label class="td-title">Giá bán:</label>
+                                                            <span class="product-unit-price">@String.Format("{0:0,0}", item.dDongia)₫</span>
+                                                        </td>
+                                                            <td class="quantity">
+                                                                <div class="cart-quantity-input-container">
+                                                                    <input type="text" maxlength="3" readonly min="0" class="qty-input" id="qtyItem91458833_@item.iMasp" name="txtSoluong" size="4" value="@item.iSoluong">                                                                 
+                                                                </div>
+                                                            </td>
+                                                            <td class="quantity">
+                                                                <label class="td-title">Toàn bộ:</label>
+                                                                <span class="product-subtotal">@String.Format("{0:0,0}", item.dThanhtien)₫</span>
+                                                            </td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="cart-footer col-sm-12 col-lg-6">
+                                    <div class="sidebar-cart">
+                                        <div class="totals">
+                                            <div class="total-info">
+                                                <table class="cart-total">
+                                                    <tbody>
+                                                        <tr class="order-subtotal">
+                                                            <td class="cart-total-left">
+                                                                <label>Tổng phụ:</label>
+                                                            </td>
+                                                            <td class="cart-total-right">
+                                                                <span class="value-summary">@String.Format("{0:0,0}", ViewBag.Tongtien)₫</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="order-total">
+                                                            <td class="cart-total-left">
+                                                                <label>Tổng cộng:</label>
+                                                            </td>
+                                                            <td class="cart-total-right">
+                                                                <span class="value-summary">@String.Format("{0:0,0}", ViewBag.Tongtien)₫</span>
+                                                            </td>
+                                                            <input type="number" hidden name="tongtien" value="@ViewBag.Tongtien" />
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                               
+                                            <div class="checkout-buttons">
+                                                <button type="submit" id="checkout" name="checkout" value="checkout" class="button-1 checkout-button">
+                                                    Đặt Hàng
+                                                </button>
+                                            </div>
+                                            <div class="note-ck">(*) Phí phụ thu sẽ được tính khi bạn tiến hành thanh toán.</div>
+                                            <div class="addon-buttons">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+</section> <!--/#cart_items-->

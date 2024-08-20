@@ -1,0 +1,99 @@
+﻿@model IEnumerable<ToyStore.Models.ChiTietDatHang>
+
+@{
+    ViewBag.Title = "Chi tiết đơn đặt hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="page shopping-cart-page">
+    <div class="page-body">
+
+        <div class="order-summary-content container">
+
+
+            <div id="shopping-cart-form" style="display: block;">
+                <div class="shopping-cart-info" style="width: 100%">
+                    <div class="cart-detail">
+                        <div class="table-wrapper">
+                            <table class="cart">
+                                <colgroup>
+                                    <col width="1">
+                                    <col width="1">
+                                    <col>
+                                    <col width="1">
+                                    <col width="1">
+                                    <col width="1">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="sku">
+                                            SKU
+                                        </th>
+                                        <th class="product-picture">
+                                            Hình ảnh
+                                        </th>
+                                        <th class="product">
+                                            Tên sản phẩm
+                                        </th>
+                                        <th class="unit-price">
+                                            Giá bán
+                                        </th>
+                                        <th class="quantity">
+                                            Số lượng
+                                        </th>
+                                        <th class="quantity">
+                                            Toàn bộ
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+
+                                            <td class="sku">
+                                                <label class="td-title">SKU:</label>
+                                                <span class="sku-number"></span>
+                                            </td>
+                                            <td class="product-picture">
+                                                <a href="@Url.Action("Details", "ToyStore", new { id = @item.MaSP })"><img alt="@item.SanPham.TenSP" src="~/Assets/Images/sanPham/@item.SanPham.AnhBia" title="Hiển thị chi tiết cho @item.SanPham.TenSP"></a>
+                                                <input type="hidden" class="product-id" value="@item.MaSP">
+                                            </td>
+                                            <td class="product">
+                                                <a href="@Url.Action("Details", "ToyStore", new { id = @item.MaSP })" class="product-name">@item.SanPham.TenSP</a>
+                                                <div class="attributes">
+                                                    Màu sắc: Đen
+                                                </div>
+                                            </td>
+                                            <td class="unit-price">
+                                                <label class="td-title">Giá bán:</label>
+                                                <span class="product-unit-price">@String.Format("{0:0,0}", item.DonGia)₫</span>
+                                            </td>
+                                            <td class="quantity">
+                                                <div class="cart-quantity-input-container">
+                                                    <input type="text" maxlength="3" readonly min="0" class="qty-input" name="txtSoluong" size="4" value="@item.SoLuong">
+                                                </div>
+                                            </td>
+                                            <td class="quantity">
+                                                <label class="td-title">Toàn bộ:</label>
+                                                <span class="product-subtotal">@String.Format("{0:0,0}", item.DonGia * item.SoLuong)₫</span>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="body" style="margin-bottom: 50px; margin-top: 30px">
+    <div class="container">
+        <a href="@Url.Action("DonDatHang", "User")">
+            <button type="submit" class="btn btn-info center-block" style="width: 100px">Về đơn hàng</button>
+        </a>
+    </div>
+</section>

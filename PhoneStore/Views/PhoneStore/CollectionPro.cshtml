@@ -1,0 +1,23 @@
+﻿@foreach (var item in Model)
+{
+    <div class="item-box">
+        <div class="product-item">
+            <div class="product_tag"></div>
+            <div class="picture">
+                <a href="@Url.Action("Details", "PhoneStore", new { id = @item.MaSP })" title="@item.TenSP">
+                    <img alt="Ảnh @item.TenSP" src="~/assets/images/sanpham/@item.AnhBia" title="Hiển thị chi tiết @item.TenSP">
+                </a>
+            </div>
+            <div class="details">
+                <h3 class="product-title">
+                    <a href="@Url.Action("Details", "PhoneStore", new { id = @item.MaSP })">@item.TenSP </a>
+                </h3>
+                <div class="add-info">
+                    <div class="prices">
+                        <span class="price actual-price">@String.Format("{0:0,0}", @item.GiaBan)₫</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}   

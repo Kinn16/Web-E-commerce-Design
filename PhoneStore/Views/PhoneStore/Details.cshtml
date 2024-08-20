@@ -1,0 +1,152 @@
+﻿@using ToyStore.Models;
+@model ToyStore.ViewModels.DetailProViewModel
+
+@using ToyStore.Controllers;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/OwlCarousel2/assets/owl.carousel.min.css" rel="stylesheet" />
+<script src="~/Content/OwlCarousel2/owl.carousel.min.js"></script>
+<script src="~/Content/owlcarousel/jquery.ez-plus.js"></script>
+
+@foreach (var item in Model.Detail)
+{
+    ViewBag.Title = @item.TenSP;
+    <div class="product-detail">
+        <div class="panel panel-default panel-product-info">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 col-md-5 text-center" style="padding-right: 20px;">
+                        <div class="product-one-image mb-2">
+                            <img width="100%" src="~/Assets/Images/sanPham/@item.AnhBia" alt="@item.TenSP" id="product-image-one-view">
+                        </div>
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                                $('#product-image-one-view').ezPlus({
+                                    scrollZoom: true,
+                                    containLensZoom: true
+                                });
+                            });
+                        </script>
+
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                                // Slide ảnh sản phẩm
+                                var owlView = $('#product-image-gallery-view');
+                                var owlNav = $('#product-image-gallery-nav');
+                                owlView.owlCarousel({
+                                    items: 1,
+                                    nav: true,
+                                    navText: ['<span><i class="fa fa-angle-left" aria-hidden="true"></i></span>', '<span><i class="fa fa-angle-right" aria-hidden="true"></i></span>'],
+                                    dots: false,
+                                    lazyLoad: true,
+                                    autoplay: false,
+                                    margin: 5
+                                });
+                                owlNav.owlCarousel({
+                                    nav: false,
+                                    dots: false,
+                                    autoplay: false,
+                                    items: 5,
+                                    margin: 5
+                                });
+                                owlView.on('changed.owl.carousel', function (e) {
+                                    $('.item', owlNav).removeClass('active');
+                                    $('[data-item="' + e.item.index + '"]', owlNav).addClass('active');
+                                    $('[data-item="' + e.item.index + '"]', owlView).find('img').ezPlus({
+                                        zIndex: 9,
+                                        zoomContainerAppendTo: owlView,
+                                        scrollZoom: true,
+                                        containLensZoom: true
+                                    });
+                                });
+                                $('.item-click-change', owlNav).on('click', function (e) {
+                                    e.preventDefault();
+                                    owlView.trigger('to.owl.carousel', [$(this).data('offset'), 300]);
+                                });
+                            });
+                        </script>
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                                $('#product-image-one-view').ezPlus({
+                                    scrollZoom: true,
+                                    containLensZoom: true
+                                });
+                            });
+                        </script>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 details-pro">
+                        <h1 class="title-product">@item.TenSP</h1>
+                        <div class="fw w_100" itemprop="offers" itemscope="" itemtype="https://schema.org/Offer">
+                            <div class="group-status margin-bottom-15">
+                                <span class="first_status">Thương hiệu: <span class="status_name" style="color: green;">APPLE</span></span>
+                                <span class="line_tt" style="margin: 0 5px;">/</span>
+                                <span class="first_status sku-product">
+                                    Số lượng tồn: <span class="status_name" style="color: green;"> @item.SoLuongTon</span>
+                                </span>
+                            </div>
+
+                            <div class="border_product border_hotline margin-top-20 margin-bottom-20"></div>
+                            <div class="reviews_details_product">
+                                <div class="price-box">
+
+
+
+                                    <span class="special-price">
+                                        <span class="price product-price">@String.Format("{0:0,0}", @item.GiaBan)₫</span>
+                                        <meta itemprop="price" content="@item.GiaBan">
+                                        <meta itemprop="priceCurrency" content="VND">
+                                    </span> <!-- Giá Khuyến mại -->
+                                    <span class="old-price" itemprop="priceSpecification" itemscope="" itemtype="https://schema.org/priceSpecification">
+                                        <del class="price product-price-old" style="display: none;">
+
+                                        </del>
+                                        <meta itemprop="price" content="0">
+                                        <meta itemprop="priceCurrency" content="VND">
+                                    </span> <!-- Giá gốc -->
+
+                                </div>
+                            </div>
+
+                            <div class="form-product col-sm-12 col-lg-12 col-md-12 col-xs-12">
+
+                                @using (Html.BeginForm("ThemGioHangChiTiet", "GioHang", new { iMaSP = @item.MaSP, @strURL = Request.Url.ToString() }))
+                                {
+                                    <div class="form-group form_button_details  margin-top-30 ">
+
+                                        <div class="form_product_content type1">
+
+                                            <div class="soluong soluong_type_1 show">
+                                                <div class="custom input_number_product custom-btn-number form-control">
+                                                    <button class="btn_num num_1 button button_qty" onclick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro ) &amp;&amp; qtypro > 1 ) result.value--;return false;" type="button"><i class="fa fa-minus"></i></button>
+                                                    <input type="text" id="qtym" name="txtSoluong" value="1" maxlength="3" class="form-control prd_quantity" onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;" onchange="if(this.value == 0)this.value=1;">
+                                                    <button class="btn_num num_2 button button_qty" onclick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro )) result.value++;return false;" type="button"><i class="fa fa-plus"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="button_actions clearfix">
+
+                                                <button type="submit" class="btn btn_base btn_add_cart btn-cart add_to_cart"><span class="text_1">Mua ngay</span></button>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                }
+                                <div class="border_product border_hotline margin-top-30 margin-bottom-20"></div>
+                                <div class="hotline_product_wrap clearfix">
+                                    <div class="hotline_product">
+                                        Sản phẩm bảo thành trong vòng 3 tháng kể từ ngày thanh toán và 1 tháng đổi trả miễn phí<br />
+                                        Mọi thắc mắc xin vui lòng liên hệ:
+                                        <a class="hai01" href="tel:18001008">18001008</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

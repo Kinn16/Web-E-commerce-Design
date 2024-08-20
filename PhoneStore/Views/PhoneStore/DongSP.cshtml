@@ -1,0 +1,7 @@
+﻿@model IEnumerable<ToyStore.Models.DongSP>
+@foreach (var item in Model)
+{
+    <li class="category-menu-item">
+        <a href="@Url.Action("DongSanPham", "PhoneStore", new { id = item.MaD })" title="@item.TenDong">@item.TenDong </a>
+    </li>
+}

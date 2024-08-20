@@ -1,0 +1,91 @@
+﻿@using ToyStore.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<ToyStore.Models.ChiTietDatHang>
+@{
+    ViewBag.Title = "Chi tiết đơn đặt hàng";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<link href="~/Content/main.css" rel="stylesheet" />
+<style>
+    .MenuTrang li {
+        margin-right: 10px;
+        border: 1px solid #4c84ff;
+        background-color: #f0f0e9;
+        padding: 6px 12px;
+        color: black;
+    }
+
+        .MenuTrang li:hover {
+            background-color: yellow;
+        }
+
+            .MenuTrang li:hover a {
+                color: white;
+                transition: 0s;
+                padding: 6px 12px;
+            }
+
+    .cut_info {
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        width: 150px;
+    }
+</style>
+<section>
+    <div class="container-fluid">
+        <div class="table-responsive cart_info">
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>
+                            Hình ảnh
+                        </th>
+                        <th>
+                            Tên sản phẩm
+                        </th>
+                        <th>
+                            Giá bán
+                        </th>
+                        <th>
+                            Số lượng
+                        </th>
+                        <th>
+                            Thành tiền
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                <img style="width: 50%; height: 100px" src="~/Assets/Images/sanPham/@item.SanPham.AnhBia" alt="@item.SanPham.TenSP" />
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SanPham.TenSP)
+                            </td>
+                            <td>
+                                @String.Format("{0:0,0}", item.SanPham.GiaBan)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SoLuong)
+                            </td>
+                            <td>
+                                @String.Format("{0:0,0}", item.DonGia)
+                            </td>
+                        </tr>
+                    }
+                </tbody>                
+            </table>
+            <br />
+            <footer style="position: absolute; bottom: 0; width: 100%; height: 2.5rem;">
+                <ul class="MenuTrang">
+                    @Html.PagedListPager(Model, page => Url.Action("Chitietdonhang", new { page = page }))
+                </ul>                
+            </footer>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,88 @@
+﻿@model ToyStore.Models.SanPham
+@using ToyStore.Models;
+@{
+    ViewBag.Title = "Xóa sản phẩm";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<style>
+    dl dd, dl dt {
+        font-size: 17px;
+    }
+</style>
+<div class="container-fluid" style="padding: 0px 85px 85px">
+    <h3 style="padding: 20px 0px 5px; color: black;">Bạn có chắc muốn xóa sản phẩm này?</h3>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <div class="row">
+                <div class="col-sm-5">
+            <dd>
+                <img src="~/Assets/Images/sanPham/@Url.Content(Model.AnhBia)" width="100%" />
+            </dd>
+    </div>
+    <div class="col-sm-7">
+        <dt>
+            Tên sản phẩm:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenSP)
+        </dd>
+
+        <dt>
+            Giá bán:
+        </dt>
+
+        <dd>
+            @String.Format("{0:0,0}", Model.GiaBan) VNĐ
+        </dd>
+
+        <dt>
+            Mô tả:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoTa)
+        </dd>
+
+
+        <dt>
+            Ngày cập nhật:
+        </dt>
+
+        <dd>
+            @String.Format("{0:dd/MM/yyyy}", Model.NgayCapNhat);
+        </dd>
+
+        <dt>
+            Số lượng tồn:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuongTon)
+        </dd>
+
+        <dt>
+            Dòng sản phẩm:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DongSP.TenDong)
+        </dd>
+    </div>
+</div>
+    </dl>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color">
+        <input type="submit" value="Xóa" class="btn btn-primary"/>
+        <br /><br />
+        <h4>@Html.ActionLink("Về trang chủ", "Index")</h4>
+    </div>
+}
+</div>
+</div>

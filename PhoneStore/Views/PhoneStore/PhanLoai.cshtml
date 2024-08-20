@@ -1,0 +1,12 @@
+﻿@model IEnumerable<ToyStore.Models.DongPL>
+@foreach (var item in Model)
+{
+    <div class="item-box">
+        <div class="sub-category-item">
+            <div class="title">
+                <a href="@Url.Action("SPtheoLoai", "PhoneStore", new { id = item.MaPL, idD = ViewBag.idD })" title="Hiển thị sản phẩm trong danh mục @item.TenPL"> @item.TenPL</a>
+            </div>
+        </div>
+    </div>
+}
+

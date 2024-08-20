@@ -1,0 +1,24 @@
+﻿@using ToyStore.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<SanPham>
+@{
+    ViewBag.Title = "Tất Cả Sản Phẩm Tại SHOPDUNK Việt Nam";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="category-item">
+    <div class="page category-page">
+        <div class="page-body">
+            <div class="product-grid featured-product-grid">
+                <div class="item-grid">
+                    @Html.Partial("_ProductList", Model) @*//sử dụng mẫu Partial View của _ProductList*@
+                </div>
+                <div class="section pagenav" style="margin-top: 20px">
+                    <ul class="pagination">
+                        @Html.PagedListPager(Model, page => Url.Action("Products", new { page = page }))
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,84 @@
+﻿@model ToyStore.Models.SanPham
+@using ToyStore.Models;
+@{
+    ViewBag.Title = "Chi tiết sản phẩm";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<style>
+    dl dd, dl dt {
+        font-size: 17px;
+    }
+</style>
+<div class="container-fluid" style="padding: 40px 80px 85px">
+    <dl class="dl-horizontal">
+        <div class="row">
+            <div class="col-sm-5">
+                <dd>
+                    <img src="~/Assets/Images/sanPham/@Url.Content(Model.AnhBia)" width="100%" />
+                </dd>
+            </div>
+<div class="col-sm-7">
+    <dt>
+        Tên sản phẩm:
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.TenSP)
+    </dd>
+
+    <dt>
+        Giá bán:
+    </dt>
+
+    <dd>
+        @String.Format("{0:0,0}", Model.GiaBan) VNĐ
+    </dd>
+
+    <dt>
+        Mô tả:
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.MoTa)
+    </dd>
+
+
+    <dt>
+        Ngày cập nhật:
+    </dt>
+
+    <dd>
+        @String.Format("{0:dd/MM/yyyy}", Model.NgayCapNhat);
+    </dd>
+
+    <dt>
+        Số lượng tồn:
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.SoLuongTon)
+    </dd>
+
+    <dt>
+        Dòng sản phẩm:
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.DongSP.TenDong)
+    </dd>
+
+    <dt>
+        Dòng phân loại:
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.DongPL.TenPL)
+    </dd>
+</div>
+            </div>
+        </dl>
+<div class="form-actions no-color">
+    <h4>@Html.ActionLink("Về trang chủ", "Index")</h4>
+</div>
+</div>

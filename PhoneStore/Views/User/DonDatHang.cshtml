@@ -1,0 +1,86 @@
+﻿@model IEnumerable<ToyStore.Models.DonDatHang>
+
+@{
+    ViewBag.Title = "Đơn đặt hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section id="cart_items">
+    <div class="container">
+        <div class="table-responsive cart_info">
+            <table class="table table-condensed text-center" style="margin-bottom: 0px;">
+                <thead>
+                    <tr class="cart_menu">
+                        <td class="image">Mã đơn hàng</td>
+                        <td class="description">Ngày đặt hàng</td>
+                        <td class="quantity">Ngày hẹn giao</td>
+                        <td class="price">Số điện thoại</td>
+                        <td class="total">Địa chỉ</td>
+                        <td class="product-details">Tổng tiền</td>
+                        <td class="cart">Thanh toán</td>
+                        <td class="cart">Tình trạng</td>
+                        <td class="cart"></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td class="cart_product">
+                            @item.SoDH
+                        </td>
+                        <td class="cart_description">
+                            @String.Format("{0:dd/MM/yyyy}", item.NgayDH)
+
+                        </td>
+                        <td class="cart_quantity">
+                            @String.Format("{0:dd/MM/yyyy}", item.NgayGiao)
+                        </td>
+                        <td class="cart_price">
+                            @item.SDT
+                        </td>
+                        <td class="cart_total">
+                            @item.Diachi
+                        </td>
+                        <td>
+                            @String.Format("{0:0,0}", item.TongTien)
+                        </td>
+                        @if (item.DaThanhToan == false)
+                        {
+                            <td>Chưa thanh toán</td>
+                        }
+                        else
+                        {
+                            <td>Đã thanh toán</td>
+                        }
+                        @if (item.TinhTrangGiaoHang == false)
+                        {
+                            <td>Đang vận chuyển</td>
+                        }
+                        else
+                        {
+                            <td>Đã giao hàng</td>
+                        }
+                        <td>
+                            @Html.ActionLink("Chi Tiết", "Chitietdonhang", new { id = item.SoDH })
+                        </td>
+                    </tr>
+
+                    }
+                </tbody>
+                <tfoot>
+                    <tr class="cart_menu">
+                        
+                    </tr>                    
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</section> <!--/#cart_items-->
+<section id="body" style="margin-bottom: 50px ">
+    <div class="container">
+        <a href="@Url.Action("Index", "PhoneStore")">
+            <button type="submit" class="btn btn-info center-block" style="width: 100px">Về trang chủ</button>
+        </a>
+    </div>
+</section>

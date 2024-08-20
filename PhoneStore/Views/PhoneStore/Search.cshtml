@@ -1,0 +1,50 @@
+﻿@using PagedList.Mvc;
+@model PagedList.PagedList<SanPham>
+@{
+    ViewBag.Title = '"' + ViewBag.Search + '"' + " giá tốt tháng " + DateTime.Now.Month + ", " + DateTime.Now.Year;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using ToyStore.Models
+
+
+<h5>Kết quả tìm kiếm cho từ khóa <b style="color: red;">"@ViewBag.Search"</b></h5>
+<br />
+<div class="category-item">
+    <div class="page category-page">
+        <div class="page-body">
+            <div class="product-grid featured-product-grid">
+                <div class="item-grid">
+                    @foreach (var toy in Model)
+                    {
+                        <div class="item-box">
+                            <div class="product-item">
+                                <div class="product_tag"></div>
+                                <div class="picture">
+                                    <a href="@Url.Action("Details", "PhoneStore", new { id = @toy.MaSP })" title="@toy.TenSP">
+                                        <img alt="Ảnh @toy.TenSP" src="~/assets/images/sanpham/@toy.AnhBia" title="Hiển thị chi tiết @toy.TenSP">
+                                    </a>
+                                </div>
+                                <div class="details">
+                                    <h3 class="product-title">
+                                        <a href="@Url.Action("Details", "PhoneStore", new { id = @toy.MaSP })">@toy.TenSP </a>
+                                    </h3>
+                                    <div class="add-info">
+                                        <div class="prices">
+                                            <span class="price actual-price">@String.Format("{0:0,0}", @toy.GiaBan)₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="section pagenav" style="margin-top: 20px">
+                    <ul class="pagination">
+                        @Html.PagedListPager(Model, page => Url.Action("Search", new { searchString = ViewBag.Search, page = page }))
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

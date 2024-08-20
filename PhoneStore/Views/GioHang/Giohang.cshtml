@@ -1,0 +1,265 @@
+﻿@using ToyStore.Models;
+@model List<Giohang>
+@{
+    ViewBag.Title = "Shopping Cart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page shopping-cart-page">
+    <div class="page-body">
+
+        <div class="order-summary-content container">
+
+
+            <div id="shopping-cart-form">
+                <div class="shopping-cart-info">
+                    <div class="cart-detail">
+                        <div class="table-wrapper">
+                            <table class="cart">
+                                <colgroup>
+                                    <col width="1">
+                                    <col width="1">
+                                    <col>
+                                    <col width="1">
+                                    <col width="1">
+                                    <col width="1">
+                                    <col width="1">
+                                    <col width="1">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="sku">
+                                            SKU
+                                        </th>
+                                        <th class="product-picture">
+                                            Hình ảnh
+                                        </th>
+                                        <th class="product">
+                                            Tên sản phẩm
+                                        </th>
+                                        <th class="unit-price">
+                                            Giá bán
+                                        </th>
+                                        <th class="quantity">
+                                            Số lượng
+                                        </th>
+                                        <th class="subtotal">
+                                            Toàn bộ
+                                        </th>
+                                        <th class="update-cart">
+                                            Cập nhật
+                                        </th>
+                                        <th class="remove-from-cart">
+
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+
+                                            <td class="sku">
+                                                <label class="td-title">SKU:</label>
+                                                <span class="sku-number"></span>
+                                            </td>
+                                            <td class="product-picture">
+                                                <a href="@Url.Action("Details", "ToyStore", new { id = item.iMasp })"><img alt="@item.sTensp" src="~/Assets/Images/sanPham/@item.sAnhbia" title="Hiển thị chi tiết cho @item.sTensp"></a>
+                                                <input type="hidden" class="product-id" value="@item.iMasp">
+                                            </td>
+                                            <td class="product">
+                                                <a href="@Url.Action("Details", "ToyStore", new { id = item.iMasp })" class="product-name">@item.sTensp</a>
+                                                <div class="attributes">
+                                                    Màu sắc: Đen
+                                                </div>
+                                            </td>
+                                            <td class="unit-price">
+                                                <label class="td-title">Giá bán:</label>
+                                                <span class="product-unit-price">@String.Format("{0:0,0}", item.dDongia)₫</span>
+                                            </td>
+                                            <td class="quantity">
+                                                <div class="cart-quantity-input-container">
+                                                    <button style="border:none;" onclick="var result = document.getElementById('qtyItem_@item.iMasp'); var qtyItem = result.value; if (!isNaN(qtyItem) &amp;&amp; qtyItem > 1 ) result.value--;
+                                                                                              $.ajax({
+                                                                                                url: '/GioHang/CapnhapGiohang',
+                                                                                                method: 'post',
+                                                                                                data: {
+                                                                                                    iMaSP: @item.iMasp,
+                                                                                                    soluong: result.value
+                                                                                                },
+                                                                                                success: function (response) {
+                                                                                                    window.location.reload();
+                                                                                                }
+                                                                                            });return false;">
+                                                        <svg id="cart-quantity-input-subtract182368" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_10158_65576)">
+                                                                <path d="M-0.00390625 5.90234H11.0039C11.1133 5.90234 11.207 5.86328 11.2852 5.78516C11.3633 5.70182 11.4023 5.60547 11.4023 5.49609C11.4023 5.38672 11.3633 5.29297 11.2852 5.21484C11.207 5.13672 11.1133 5.09766 11.0039 5.09766H-0.00390625C-0.0768229 5.09766 -0.144531 5.11589 -0.207031 5.15234C-0.264323 5.1888 -0.311198 5.23828 -0.347656 5.30078C-0.384115 5.35807 -0.402344 5.42318 -0.402344 5.49609C-0.402344 5.57422 -0.384115 5.64453 -0.347656 5.70703C-0.311198 5.76432 -0.264323 5.8112 -0.207031 5.84766C-0.144531 5.88411 -0.0768229 5.90234 -0.00390625 5.90234Z" fill="#0066CC"></path>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_10158_65576">
+                                                                    <rect width="11" height="11" fill="white"></rect>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="text" maxlength="3" readonly="" min="0" class="qty-input" id="qtyItem_@item.iMasp" name="txtSoluong" size="4" value="@item.iSoluong">
+
+                                                    <button style="border:none;" onclick="var result = document.getElementById('qtyItem_@item.iMasp'); var qtyItem = result.value; if (!isNaN(qtyItem)) result.value++;
+                                                                                              $.ajax({
+                                                                                                url: '/GioHang/CapnhapGiohang',
+                                                                                                method: 'post',
+                                                                                                data: {
+                                                                                                    iMaSP: @item.iMasp,
+                                                                                                    soluong: result.value
+                                                                                                },
+                                                                                                success: function (response) {
+                                                                                                    window.location.reload();
+                                                                                                }
+                                                                                            });return false;">
+                                                        <svg id="cart-quantity-input-add182368" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_10158_65579)">
+                                                                <path d="M-0.304688 6.5C-0.304688 6.61458 -0.265625 6.71094 -0.1875 6.78906C-0.104167 6.86719 -0.0104167 6.90625 0.09375 6.90625H5.19531V12.0078C5.19531 12.1172 5.23438 12.2109 5.3125 12.2891C5.39583 12.3672 5.49219 12.4062 5.60156 12.4062C5.71094 12.4062 5.80469 12.3672 5.88281 12.2891C5.96094 12.2109 6 12.1172 6 12.0078V6.90625H11.1016C11.2109 6.90625 11.3047 6.86719 11.3828 6.78906C11.4609 6.71094 11.5 6.61458 11.5 6.5C11.5 6.39062 11.4609 6.29688 11.3828 6.21875C11.3047 6.14062 11.2109 6.10156 11.1016 6.10156H6V1C6 0.890625 5.96094 0.796875 5.88281 0.71875C5.80469 0.635417 5.71094 0.59375 5.60156 0.59375C5.49219 0.59375 5.39583 0.635417 5.3125 0.71875C5.23438 0.796875 5.19531 0.890625 5.19531 1V6.10156H0.09375C-0.0104167 6.10156 -0.104167 6.14062 -0.1875 6.21875C-0.265625 6.29688 -0.304688 6.39062 -0.304688 6.5Z" fill="#0066CC"></path>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_10158_65579">
+                                                                    <rect width="12" height="12" fill="white" transform="translate(0 0.5)"></rect>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </button>
+
+                                                </div>
+                                            </td>
+                                            <td class="subtotal">
+                                                <label class="td-title">Toàn bộ:</label>
+                                                <span class="product-subtotal">@String.Format("{0:0,0}", item.dThanhtien)₫</span>
+                                            </td>
+                                            <td class="remove-from-cart">
+                                                <input type="checkbox" name="removefromcart" id="removefromcart182368" value="182368" aria-label="Tẩy">
+                                                <a href="@Url.Action("XoaGiohang", new { @iMaSP = item.iMasp })">
+                                                    <button type="button" name="updatecart" class="remove-btn once-submit-button"></button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    }
+                                    </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="cart-options">
+                            <div class="common-buttons">
+                                <button onclick="location.reload()" type="submit" name="updatecart" id="updatecart" class="button-2 update-cart-button once-submit-button">Cập nhật giỏ hàng</button>
+
+                                <a href="/">
+                                    <button type="button" name="continueshopping" class="button-2 continue-shopping-button once-submit-button">Tiếp tục mua sắm</button>
+                                </a>
+
+                            </div>
+
+                            <div class="selected-checkout-attributes">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    @*<div class="title_checkout_billing">
+                        Thông tin thanh toán
+                    </div>
+                    <div class="content-notlogin">
+                        <p>Đăng nhập ngay để nhận được “điểm thưởng” hấp dẫn khi mua hàng thành công các sản phẩm tại ShopDunk</p>
+                        <a href="/login">Đăng nhập ngay</a>
+                    </div>
+                    <div class="all_checkout-billing">
+                        <div id="checkout-billing-load">
+
+                            <div class="checkout-data">
+
+
+                                <div class="section new-billing-address" id="billing-new-address-form">
+                                    <div class="enter-address bg-white">
+
+
+                                        <input class="address-id" type="hidden" data-val="true" data-val-required="The Id field is required." id="BillingNewAddress_Id" name="BillingNewAddress.Id" value="0">
+                                        <div class="edit-address">
+                                            <div class="inputs">
+                                                <input placeholder="Tên" type="text" id="BillingNewAddress_FirstName" name="BillingNewAddress.FirstName" value="">
+                                                <span></span>
+                                            </div>
+                                            <div class="inputs two_col left">
+                                                <input placeholder="Số điện thoại" type="tel" id="BillingNewAddress_PhoneNumber" name="BillingNewAddress.PhoneNumber" value="">
+                                                <span></span>
+                                            </div>
+                                            <div class="inputs two_col right">
+                                                <input placeholder="Email" type="email" id="BillingNewAddress_Email" name="BillingNewAddress.Email" value="">
+                                                <span></span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>*@
+
+                </div>
+                <div class="row">
+
+                    <div class="cart-footer col-sm-12 col-lg-6">
+                        <div class="sidebar-cart">
+                            <div class="totals">
+                                <div class="total-info">
+                                    <table class="cart-total">
+                                        <tbody>
+                                            <tr class="order-subtotal">
+                                                <td class="cart-total-left">
+                                                    <label>Tổng phụ:</label>
+                                                </td>
+                                                <td class="cart-total-right">
+                                                    <span class="value-summary">@String.Format("{0:0,0}", ViewBag.Tongtien)₫</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="order-total">
+                                                <td class="cart-total-left">
+                                                    <label>Tổng cộng:</label>
+                                                </td>
+                                                <td class="cart-total-right">
+                                                    <span class="value-summary">@String.Format("{0:0,0}", ViewBag.Tongtien)₫</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                                <div id="terms-of-service-warning-box" title="Điều khoản dịch vụ" style="display: none;">
+                                    <p>Vui lòng chấp nhận các điều khoản dịch vụ trước bước tiếp theo.</p>
+                                </div>
+                                <div class="terms-of-service">
+                                    <div class="d-flex">
+                                        <div><input id="termsofservice" type="checkbox" name="termsofservice"></div>
+                                        <label for="termsofservice"><span class="rule-web">Tôi đã đọc và đồng ý với</span><a href="/chinh-sach-doi-tra" class="read" target="_blank"> điều khoản và điều kiện</a> <span class="rule-web">của website</span></label>
+                                    </div>
+
+                                </div>
+                                <div class="checkout-buttons">
+                                    <a href="@Url.Action("Dathang", "GioHang")">
+                                        <button type="button" id="checkout" name="checkout" value="checkout" class="button-1 checkout-button">
+                                            Tiến hành đặt hàng
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="note-ck">(*) Phí phụ thu sẽ được tính khi bạn tiến hành thanh toán.</div>
+                                <div class="addon-buttons">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

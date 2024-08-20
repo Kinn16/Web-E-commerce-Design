@@ -1,0 +1,106 @@
+﻿@model ToyStore.Models.SanPham
+
+@{
+    ViewBag.Title = "Sửa sản phẩm";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<style>
+    .vienkhung {
+        border-radius: 5px;
+        border: solid 2px #4c84ff;
+    }
+</style>
+<h3 style="padding: 15px 20px; color: black">Sửa sản phẩm</h3>
+<hr />
+
+@using (Html.BeginForm("Edit", "Admin", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal" style="padding-left: 100px">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.MaSP)
+
+        <div class="form-group">
+            <label class="control-label col-md-5">Tên sản phẩm</label>
+            <div class="col-md-7">
+                @Html.EditorFor(model => model.TenSP, new { htmlAttributes = new { @class = "form-control", @style = "border-radius: 5px; border: solid 2px #4c84ff;" } })
+                @Html.ValidationMessageFor(model => model.TenSP, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-5">Giá bán</label>
+            <div class="col-md-7">
+                @Html.EditorFor(model => model.GiaBan, new { htmlAttributes = new { @class = "form-control", @style = "border-radius: 5px; border: solid 2px #4c84ff;" } })
+                @Html.ValidationMessageFor(model => model.GiaBan, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-5">Mô tả</label>
+            <div class="col-md-7">
+                @Html.EditorFor(model => model.MoTa, new { htmlAttributes = new { @class = "form-control", @style = "border-radius: 5px; border: solid 2px #4c84ff;" } })
+                @Html.ValidationMessageFor(model => model.MoTa, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-5">Cập nhật ảnh</label>
+            <div class="col-md-7">
+                <input type="file" name="ImageUpload" />
+                <br /><br />
+                <img src="~/Assets/Images/sanPham/@Url.Content(Model.AnhBia)" width="160"/>
+                @ViewBag.ThongBao
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-5">Ngày nhập hàng</label>
+            <div class="col-md-10">
+                <input type="text" readonly name="Ngaycapnhat" value="@DateTime.UtcNow.Date.ToShortDateString()" class="select2-results__option vienkhung" />
+                @Html.ValidationMessageFor(model => model.NgayCapNhat, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-5">Số lượng</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SoLuongTon, new { htmlAttributes = new { @Value = "1", @min = "1", @class = "form-control", @style = "border-radius: 5px; border: solid 2px #4c84ff; width: 168px; height: 35px;" } })
+                @Html.ValidationMessageFor(model => model.SoLuongTon, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-9" style="display:flex">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label class="control-label">Dòng sản phẩm</label>
+                        <div>
+                            @Html.DropDownList("MaD", null, "Chọn dòng", new { @class = "select2-results__option vienkhung", @style = "width: 170px" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label class="control-label">Phân loại</label>
+                        <div>
+                            @Html.DropDownList("MaPL", null, "Chọn phân loại", new { @class = "select2-results__option vienkhung" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<div class="text-center" style="margin-top: 50px;">
+    <h4>@Html.ActionLink("Back to List", "Index")</h4>
+</div>

@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "Đăng Ký";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    body {
+        background: #fff;
+    }
+</style>
+
+<div class="page registration-page">
+    <div class="page-body">
+        <div class="customer-blocks">
+            <div class="new-wrapper register-block">
+                <div class="topic-block">
+                    <div class="topic-block-body">
+                        <p><img src="~/Assets/Images/shop/register_background.png" alt="" width="793" height="467"></p>
+                    </div>
+                </div>
+            </div>
+            @using (Html.BeginForm())
+            {
+                @Html.ValidationSummary(true)
+                <div class="fieldset">
+                    <div class="page-title">
+                        <h1>Đăng ký</h1>
+                    </div>
+                    <div class="form-fields">
+                        <div class="inputs first_name">
+                            <label for="FirstName">Tên đăng nhập:</label>
+                            @Html.TextBox("TenDN", null, new { placeholder = "Tên đăng nhập", @class = "form-control form-control-lg" })
+                            @ViewData["Loi1"]
+                        </div>
+                        <div class="inputs">
+                            <label for="Username">Họ, Tên:</label>
+                            @Html.TextBox("HotenKH", null, new { placeholder = "Họ tên", @class = "form-control form-control-lg" })
+                            @ViewData["Loi2"]
+                        </div>
+                        <div class="inputs">
+                            <label for="Email">E-mail:</label>
+                            @Html.TextBox("Email", null, new { placeholder = "Email", @class = "form-control form-control-lg" })
+                            @ViewData["Loi6"]
+                        </div>
+                        <div class="inputs">
+                            <label for="Phone">Điện thoại:</label>
+                            @Html.TextBox("SDT", null, new { placeholder = "Số điện thoai", @class = "form-control form-control-lg" })
+                            @ViewData["Loi4"]
+                        </div>
+                        <div class="inputs">
+                            <label for="Phone">Địa chỉ:</label>
+                            @Html.TextBox("DiaChi", null, new { placeholder = "Địa chỉ", @class = "form-control form-control-lg" })
+                            @ViewData["Loi5"]
+                        </div>
+                    </div>
+                </div>
+                <div class="fieldset">
+                    <div class="form-fields">
+                        <div class="inputs">
+                            <label for="Password">Mật khẩu:</label>
+                            <input type="password" name="MatKhau" class="form-control form-control-lg" placeholder="Mật khẩu" required="" />
+                            @ViewData["Loi7"]
+                        </div>
+                        <label class="luu_y"> Lưu ý: Mật khẩu phải có tối thiểu 8 ký tự bao gồm chữ, số và các ký tự đặc biệt </label>
+                        <div class="inputs">
+                            <label for="ConfirmPassword">Xác nhận mật khẩu:</label>
+                            <input type="password" name="MatKhauNhapLai" class="form-control form-control-lg" placeholder="Nhập lại mật khẩu" required="" />
+                            @ViewData["Loi8"]
+                            @ViewData["Loi9"]
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="submit" name="register-button" id="register-button" class="button-1 register-next-step-button">Đăng ký</button>
+                </div>
+                <div class="buttons-forgot">
+                    <label> Bạn đã có tài khoản? </label>
+                    <a href="@Url.Action("DangNhap", "User")" class="link_access">đăng nhập ngay</a>
+                </div>               
+            }
+        </div>
+    </div>
+</div>

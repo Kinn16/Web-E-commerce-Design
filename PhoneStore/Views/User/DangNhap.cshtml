@@ -1,0 +1,74 @@
+﻿@model ToyStore.Models.KhachHang
+@{
+    ViewBag.Title = " Đăng Nhập";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    body {
+        background: #ffffff;
+    }
+</style>
+
+<div class="master-column-wrapper">
+    <div class="center-1">
+        <div class="page login-page">
+            <div class="page-body">
+                <div class="customer-blocks">
+                    <div class="new-wrapper register-block">
+                        <div class="topic-block">
+                            <div class="topic-block-body">
+                                <p>
+                                    <img src="~/Assets/Images/shop/login_background.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="returning-wrapper fieldset">
+                        @using (Html.BeginForm("DangNhap", "User", new { returnUrl = Request.QueryString["ReturnUrl"] }, FormMethod.Post))
+                        {
+                            @Html.ValidationSummary(true)
+                            <div class="page-title"><h1>Đăng nhập</h1></div><div class="form-fields">                                
+                                <div class="inputs">
+                                    <label for="Username">Tên đăng nhập:</label>
+                                    @Html.TextBox("TenDN", null, new { placeholder = "Tài khoản", @class = "username"  })
+                                    <span class="field-validation-valid" data-valmsg-for="Username" data-valmsg-replace="true"></span>
+                                </div>
+                                <div class="inputs">
+                                    <label for="Password">Mật khẩu:</label>
+                                    <input type="password" class="form-control form-control-lg" name="MatKhau" placeholder="Mật khẩu" required="" />
+                                    <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                                </div>
+                                <div class="form-signup" style="color:red;">
+                                    @ViewBag.Thongbao
+                                    @if (TempData["ErrorMessage"] != null)
+                                    {
+                                        <div class="alert alert-danger">
+                                            @TempData["ErrorMessage"]
+                                        </div>
+                                    }
+                                </div>
+                                <div class="inputs reversed">
+                                    <input type="checkbox" data-val="true" data-val-required="The Nhớ mật khẩu field is required." id="RememberMe" name="RememberMe" value="true">
+                                    <label for="RememberMe">Nhớ mật khẩu</label>
+                                    <span class="forgot-password">
+                                        <a href="#">Quên mật khẩu?</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <button type="submit" class="button-1 login-button">Đăng nhập</button>
+                            </div>
+                            <div class="buttons-forgot">
+                                <label> Bạn chưa có tài khoản? </label>
+                                <a href="@Url.Action("DangKy", "User")">
+                                    <button type="button" class="button-1 register-button">Tạo tài khoản ngay</button>
+                                </a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
