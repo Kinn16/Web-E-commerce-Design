@@ -19,27 +19,23 @@ To get started with the project, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-repository-url.git
-Navigate to the project directory:
-bash
-Sao chép mã
-cd your-project-directory
-Install the required dependencies:
-bash
-Sao chép mã
-npm install
-Start the development server:
-bash
-Sao chép mã
-npm start
+2.Navigate to the project directory:
+   ```bash
+   cd your-project-directory
+3.Install the required dependencies:
+   ```bash
+   npm install
+4.Start the development server:
+   ```bash
+   npm start
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 Contact
 For any inquiries or further information, please contact us at:
 
-Đặng Thành Thái: your-email@example.com
-Thái Huỳnh: your-email@example.com
-vbnet
+Đặng Thành Thái: 21dh114117@st.huflit.edu.vn.com
+
 Sao chép mã
 
 Feel free to adjust the contact information and repository URL as needed!
