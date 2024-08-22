@@ -18,18 +18,29 @@ This project involves the development of a comprehensive e-commerce platform ded
 To get started with the project, follow these steps:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repository-url.git
+   git clone https://github.com/Kinn16/Web-E-commerce-Design.git
    
-2.Navigate to the project directory:
-   bash
-   cd your-project-directory
+2. Navigate to the project directory:
+   ```bash
+   cd Web-E-commerce-Design
 
-3.Install the required dependencies:
-   bash
-   npm install
-4.Start the development server:
-   bash
-   npm start
+3. Install the required dependencies:
+   ```bash
+   dotnet restore
+4. Start the development server:
+   ```bash
+   dotnet ef database update
+5. Build the project:
+   ```bash
+   dotnet build
+6. Run the application:
+   ```bash
+   dotnet run
+
+Additional information:
+
+If you have trouble with the process of installing and running the application, please contact 21dh114117@st.huflit.edu.vn for assistance.
+
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
@@ -38,7 +49,7 @@ For any inquiries or further information, please contact us at:
 
 Đặng Thành Thái: 21dh114117@st.huflit.edu.vn.com
 
-Sao chép mã
+
 
 Feel free to adjust the contact information and repository URL as needed!
 
