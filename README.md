@@ -19,14 +19,16 @@ To get started with the project, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-repository-url.git
+   
 2.Navigate to the project directory:
-   ```bash
+   bash
    cd your-project-directory
+
 3.Install the required dependencies:
-   ```bash
+   bash
    npm install
 4.Start the development server:
-   ```bash
+   bash
    npm start
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
