@@ -19,11 +19,9 @@ To get started with the project, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Kinn16/Web-E-commerce-Design.git
-   
 2. Navigate to the project directory:
    ```bash
    cd Web-E-commerce-Design
-
 3. Install the required dependencies:
    ```bash
    dotnet restore
